@@ -5,19 +5,24 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//@Entity
-//@Table(name = "movies_rented")
+@Entity
+@Table(name = "movies_rented")
 public class Client {
 	
 	
 	
-//	@Column(name = "credit_card")
+	@Column(name = "credit_card")
 	private String creditCard;
 	
-//	@Column(name = "emailId")
+	@Column(name = "emailId")
 	private String emailId;
 		
 	
+	
+	public Client () {
+		
+		
+	}
 	public Client(String emailId, String creditCard) {		
 		this.emailId = emailId;
 		this.creditCard = creditCard;
